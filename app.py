@@ -3,11 +3,10 @@ import css
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import pandas as pd
-import locale
 import plotly.graph_objects as go
 
 # Definir o locale para português do Brasil
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+# locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
 def format_brazilian_currency(value):
     return f"{value:,.2f}".replace(",", "v").replace(".", ",").replace("v", ".")
